@@ -1,0 +1,25 @@
+{
+  "name": "hrms_web_automation_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Single-Data": "npx playwright test tests/HRMS_SingleData.spec.ts",
+    "Allure-Reports": "npx allure serve allure-results",
+    "Using-JsonFile": "npx playwright test tests/HRMS_MultipleDataUsingJsonFile.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2",
+    "dotenv": "^17.4.2"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
